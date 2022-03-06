@@ -1,0 +1,20 @@
+{
+  "name": "indoor-server",
+  "version": "1.0.0",
+  "description": "to save data ",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rajendra Prajapat",
+  "license": "ISC",
+  "dependencies": {
+    "archiver": "^5.3.0",
+    "body-parser": "^1.19.2",
+    "express": "^4.17.3"
+  },
+  "engines": {
+    "node": "12.22.5"
+  }
+}
