@@ -80,6 +80,9 @@ app.get('/data', (req, res) => {
     archive.finalize();
 })
 
-app.listen(process.env.PORT | 7070, () => {
+var server_port = process.env.PORT || 8081;
+var server_host = '0.0.0.0';
+
+app.listen(server_port, server_host, () => {
     console.log(`listening`);
 })
