@@ -8,8 +8,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // parse application/json
 app.use(bodyParser.json());
 
-
-const port = process.env.PORT | 7070;
 const directory = __dirname + '/data';
 
 function getFiles(dir, files_) {
@@ -82,6 +80,6 @@ app.get('/data', (req, res) => {
     archive.finalize();
 })
 
-app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`)
+app.listen(process.env.PORT | 7070, () => {
+    console.log(`listening`);
 })
